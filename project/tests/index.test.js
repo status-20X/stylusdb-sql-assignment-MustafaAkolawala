@@ -1,8 +1,8 @@
-const readCSV = require('../src/csvReader');
-
 test('Basic Jest Test', () => {
     expect(1).toBe(1);
   });
+
+const readCSV = require('../src/csvReader');  
 
 test('Read CSV File', async () => {
     const data = await readCSV('./sample.csv');
